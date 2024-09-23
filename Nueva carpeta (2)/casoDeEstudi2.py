@@ -100,13 +100,7 @@ class Gestion:
         conductor_idx = int(input("Selecciona el número del conductor: ")) - 1
         self.vehiculos[vehiculo_idx].asignar_conductor(self.conductores[conductor_idx])
 
-    def realizar_servicio_a_vehiculo(self):
-        self.mostrar_vehiculos()
-        vehiculo_idx = int(input("Selecciona el número del vehículo: ")) - 1
-        servicio_tipo = input("Tipo de servicio (Mantenimiento/Combustible): ")
-        descripcion = input("Descripción del servicio: ")
-        servicio = Servicio(servicio_tipo, descripcion)
-        servicio.realizar_servicio(self.vehiculos[vehiculo_idx])
+    
 
 
 def main():
