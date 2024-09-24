@@ -126,13 +126,6 @@ def main():
             vehiculo = Vehiculo(marca, modelo, año, capacidad, tipo_combustible)
             gestion.agregar_vehiculo(vehiculo)
 
-        elif opcion == "2":
-            nombre = input("Nombre del conductor: ")
-            fecha_nacimiento = input("Fecha de nacimiento (YYYY-MM-DD): ")
-            licencia = input("Número de licencia de conducir: ")
-            conductor = Conductor(nombre, fecha_nacimiento, licencia)
-            gestion.agregar_conductor(conductor)
-
         elif opcion == "3":
             gestion.mostrar_vehiculos()
 
